@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<style>
+    body {
+        font-family: 'Courier New', Courier, monospace !important;
+        background-image: url('../image/homeImg.jpg') !important;
+        background-color: #141414 !important;
+        background-size: cover;
+        background-position: 50% 20%;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100%;
+    }
+
+    nav {
+        background-color: transparent;
+    }
+
+    .navbar-toggler-icon {
+        color: white !important;
+    }
+
+    .navbar-brand {
+        color: white !important;
+    }
+
+    .navbar-nav .nav-link {
+        color: white !important;
+    }
+
+    .centered-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: calc(100vh - 56px);
+        /* 減去導覽列的高度，確保 h1 不會被導航欄覆蓋 */
+        text-align: center;
+        flex-direction: column;
+        /* 垂直排列文字 */
+    }
+
+    .footer {
+        margin: auto;
+        text-align: center;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: transparent;
+        color: black;
+        text-align: center;
+    }
+
+    .list-inline-item a {
+        color: rgb(61, 61, 61) !important;
+    }
+
+    .fab {
+        font-size: 30px;
+        margin: 15px;
+    }
+
+    .footer a:hover {
+        color: #ffd700 !important;
+    }
+</style>
+
+<!-- 引用libs.js來加載其他資源 -->
+<script src="../js/libs.js"></script>
+
+<script>
+
+</script>
+
+<body>
+    <!-- 導覽列 -->
+    <nav class="navbar navbar-expand-sm navbar-light">
+        <div class="container-fluid ">
+            <a class="navbar-brand" href="#">Sheridan</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./education.html">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./experience.html">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./skills.html">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./challenges.html">Challenges</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 內容 -->
+    <div class="centered-container">
+        <h1 style="color: black;">YU Hsuan, Chen</h1><br>
+        <h1>I'm a Life Player</h1>
+    </div>
+    <!-- 註腳 -->
+    <div class="row footer">
+        <ul class="list-inline footer-links">
+            <li class="list-inline-item">
+                <a href="https://www.facebook.com/profile.php?id=100090880929738">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://www.instagram.com/sheridan0817/">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/sheridan-chen-0b0175325/">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://github.com/gitInterface">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenges</title>
+</head>
+<style>
+    body {
+        font-family: 'Courier New', Courier, monospace !important;
+        background-color: #141414 !important;
+        width: 100%;
+        color: #fff !important;
+        text-align: center !important;
+    }
+
+    .card-title,
+    .card-text {
+        color: black !important;
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 25px;
+        color: #fff;
+        text-decoration: none;
+        background-color: #000;
+        padding: 5px 10px;
+        border-radius: 5px;
+        border: 1px solid white;
+    }
+
+    .close-btn:hover {
+        background-color: #444;
+    }
+
+    .header {
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    .header h1::after {
+        content: ".";
+        color: #ffd700;
+    }
+
+    /* 新增的覆蓋圖片的文字區塊 */
+    .image-container {
+        position: relative;
+        /* 使內部的div可以絕對定位 */
+        max-width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        /* 確保文字區塊覆蓋圖片寬度 */
+        height: 100%;
+        /* 覆蓋整個圖片高度 */
+        background-color: rgba(0, 0, 0, 0.6);
+        /* 黑色半透明背景 */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: center;
+        flex-direction: column;
+        /* 垂直排列文字 */
+    }
+</style>
+
+<!-- 引用libs.js來加載其他資源 -->
+<script src="../js/libs.js"></script>
+<script>
+
+</script>
+
+<body>
+    <div class="container">
+        <a href="../html/index.html" class="close-btn">X</a>
+        <div class="header">
+            <h1>Challenges</h1>
+        </div>
+        <br>
+        <br>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8">
+                <div class="image-container">
+                    <div class="overlay">
+                        <h1>獻給讀者的您</h1>
+                        <p>曾經我在大學三年級時患上躁鬱症，這是突發性的。<br>
+                            一度大學肄業，當時的我感覺到原來生命可以生不如死，<br>
+                            我斷斷續續的住進醫院，調養身心狀況，時不時地焦慮讓我很是痛苦。<br>
+                            每天得起床睜開眼，就會感嘆又多活了一天。<br>
+                            直到有一次住院，有一個六十多歲的阿伯跟我說，以後不要再住進來了，<br>
+                            我當時覺得很錯愕，我不認識他不知道為甚麼他跟我講那句話，但我也聽進去他的話。<br>
+                            最後一次出院的我，開始重拾書本，複習曾經讀過寫過的程式，開始自己練習做一個全端網站，<br>
+                            參加資策會的JAVA班培訓，並成功結訓完成專題發表。
+                            重拾了信心，我又考上東吳大學資管系的轉學考，成功復學讀書，並完成了大學學業。<br><br>
+                            這份經驗要告訴大家，活著比較好，<br>
+                            因為只要活著永遠都會有希望。<br>
+                            Quoted by 我大學最好的同學。<br><br>
+                            圖片為大病初癒，憔悴70公斤的我。
+                        </p>
+                    </div>
+                    <img src="../image/fighting.jpg" class="img-fluid" alt="Challenges Image">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

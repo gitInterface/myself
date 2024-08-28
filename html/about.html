@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+</head>
+<style>
+    body {
+        font-family: 'Courier New', Courier, monospace !important;
+        background-color: #141414 !important;
+        height: 100vh;
+        width: 100%;
+        color: #fff !important;
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 25px;
+        color: #fff;
+        text-decoration: none;
+        background-color: #000;
+        padding: 5px 10px;
+        border-radius: 5px;
+        border: 1px solid white;
+    }
+
+    .close-btn:hover {
+        background-color: #444;
+    }
+
+    .header {
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    .header h1::after {
+        content: ".";
+        color: #ffd700;
+    }
+
+    #photo {
+        box-shadow: 0 0 18px 3px white;
+    }
+
+    .about-details {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .label {
+        padding: 20px;
+    }
+
+    .social-icons {
+        text-align: center;
+    }
+
+    .social-icons a {
+        color: #fff;
+        margin: 15px;
+        font-size: 25px;
+        transition: color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+        color: #ffd700;
+    }
+</style>
+
+<!-- 引用libs.js來加載其他資源 -->
+<script src="../js/libs.js"></script>
+<script>
+
+</script>
+
+<body>
+    <div class="container">
+        <a href="../html/index.html" class="close-btn">X</a>
+        <div class="header">
+            <h1>About Me</h1>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-5">
+                <div style="text-align: center;">
+                    <img id="photo" src="../image/aboutImg.jpg" alt="Profile Picture" style="height: 500px;">
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-7">
+                <div class="about-details">
+                    <h2>Who am i?</h2>
+                    <h2>我是陳裕烜，軟體工程師</h2>
+                    <p>在大學求學的過程中，透過課程的修習，慢慢了解到了自己想要的領域發展，於是修讀做Web網站的課程，往自己想要的領域發展。</p>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 label">
+                            <span>Name:</span><br>陳裕烜
+                        </div>
+                        <div class="col-sm-12 col-md-6 label">
+                            <span>Age:</span><br>26
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 label">
+                            <span>Email:</span><br>sheridan0021@gmail.com
+                        </div>
+                        <div class="col-sm-12 col-md-6 label">
+                            <span>From:</span><br>New Taipei, Taiwan
+                        </div>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100090880929738"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/sheridan0817/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/sheridan-chen-0b0175325/"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/gitInterface"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
