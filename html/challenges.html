@@ -80,6 +80,18 @@
         max-width: 100%;
         /* 限制寬度以適應小屏幕 */
     }
+
+    /* 增加 media queries 調整小屏幕的樣式 */
+    @media (max-width: 768px) {
+        .overlay {
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        .header h1 {
+            font-size: 24px;
+        }
+    }
 </style>
 
 <!-- 引用libs.js來加載其他資源 -->
