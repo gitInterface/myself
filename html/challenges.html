@@ -47,7 +47,7 @@
         color: #ffd700;
     }
 
-    /* 新增的覆蓋圖片的文字區塊 */
+    /* 覆蓋圖片的文字區塊 */
     .image-container {
         position: relative;
         /* 使內部的div可以絕對定位 */
@@ -62,8 +62,8 @@
         left: 0;
         width: 100%;
         /* 確保文字區塊覆蓋圖片寬度 */
-        height: 100%;
-        /* 覆蓋整個圖片高度 */
+        min-height: 100%;
+        /* 確保文字區塊高度根據內容自適應 */
         background-color: rgba(0, 0, 0, 0.6);
         /* 黑色半透明背景 */
         display: flex;
@@ -75,6 +75,10 @@
         text-align: center;
         flex-direction: column;
         /* 垂直排列文字 */
+        overflow: hidden;
+        /* 防止溢出 */
+        max-width: 100%;
+        /* 限制寬度以適應小屏幕 */
     }
 </style>
 
