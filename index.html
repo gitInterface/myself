@@ -41,6 +41,16 @@
         /* 垂直排列文字 */
     }
 
+    .hidden-text {
+        opacity: 0;
+        transition: opacity 1s;
+    }
+
+    .visible-text {
+        opacity: 1;
+        transition: opacity 1s;
+    }
+
     .footer {
         margin: auto;
         text-align: center;
@@ -71,7 +81,27 @@
 <script src="./js/libs.js"></script>
 
 <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const texts = ["Life Player", "Software Engineer"];
+        let index = 0;
+        const textElement = document.getElementById("changing-text");
 
+        setInterval(() => {
+            // 隱藏當前文本
+            textElement.classList.remove("visible-text");
+            textElement.classList.add("hidden-text");
+
+            setTimeout(() => {
+                // 切換文本
+                index = (index + 1) % texts.length;
+                textElement.textContent = texts[index];
+
+                // 顯示新的文本
+                textElement.classList.remove("hidden-text");
+                textElement.classList.add("visible-text");
+            }, 1000); // 與 transition 時間相匹配
+        }, 3000); // 每 3 秒切換一次文本
+    });
 </script>
 
 <body>
@@ -111,8 +141,9 @@
     <!-- 內容 -->
     <div class="centered-container">
         <h1 style="color: #fff; font-weight: bold;">YU Hsuan, Chen</h1><br>
-        <h1 style="color: #fff; font-weight: bold;">I'm a Life Player</h1>
+        <h1 style="color: #fff; font-weight: bold;">I'm a <span id="changing-text">Life Player</span></h1>
     </div>
+
     <!-- 註腳 -->
     <div class="row footer">
         <ul class="list-inline footer-links">
